@@ -1,0 +1,52 @@
+CREATE TABLE Location (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30),
+address VARCHAR(100),
+phone VARCHAR(20),
+latitude DOUBLE,
+longitude DOUBLE,
+marker CHAR(1),
+type VARCHAR(30),
+area VARCHAR(30),
+active CHAR(1),
+description VARCHAR(300),
+website VARCHAR(100));
+
+CREATE TABLE Person (
+person_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(30),
+last_name VARCHAR(50),
+street VARCHAR(50),
+city VARCHAR(30),
+zip_code VARCHAR(10),
+email VARCHAR(50),
+phone VARCHAR(20));
+
+CREATE TABLE User (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(30) NOT NULL,
+password VARCHAR(50) NOT NULL,
+firstname VARCHAR(30),
+lastname VARCHAR(50),
+email VARCHAR(50),
+role VARCHAR(20) NOT NULL,
+active CHAR(1) NOT NULL,
+locked CHAR(1) NOT NULL,
+createdate DATETIME DEFAULT NULL,
+lastlogin DATETIME DEFAULT NULL);
+
+insert into Location (name, address, phone, latitude, longitude, marker, type, area, active, description, website)
+ VALUES ("XYZ Company”, "477 9th St NW Homer, AL 88994", "111-222-3333", 48.047815, -91.347225, "Y", "”, "North", "Y","description", "website.com");
+
+insert into Person (first_name, last_name, street, city, zip_code, email, phone)
+ VALUES (“Test”, "User", "123 4th Ave", "Maple Grove", "55311", "jon@test.com", "111-222-3333");
+
+insert into User (username, password, firstname, lastname, role, active, locked, createdate, lastlogin)
+ VALUES (“test1”, "password", "Test", "User", "user", "Y", "N", SYSDATE(), SYSDATE());
+
+CREATE TABLE Sequence (
+SEQ_NAME VARCHAR(30),
+SEQ_COUNT INTEGER);
+
+insert into sequence (seq_name, seq_count) values ("JPA_SEC", 1);
+ 

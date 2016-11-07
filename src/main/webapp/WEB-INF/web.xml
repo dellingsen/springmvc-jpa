@@ -1,0 +1,51 @@
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+         metadata-complete="true">
+         
+    <!-- Needed to load applicationContext.xml for Entity wiring -->
+    <listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- Define pattern for accessing rest services -->
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+   <!-- 
+   <filter>
+       <filter-name>Authentication Filter</filter-name>
+       <filter-class>com.home.webapps.security.AuthenticationFilter</filter-class>
+   </filter>
+   <filter-mapping>
+       <filter-name>Authentication Filter</filter-name>
+       <url-pattern>/*</url-pattern>
+   </filter-mapping>
+   <error-page>
+    <error-code>401</error-code>
+    <location>/login</location>
+   </error-page>
+   -->
+ 
+   <welcome-file-list>
+   	   <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+   
+    <jsp-config>       
+      <jsp-property-group>
+        <url-pattern>*.jsp</url-pattern>
+        <url-pattern>*.jspf</url-pattern>
+      </jsp-property-group>
+    </jsp-config> 
+
+</web-app>

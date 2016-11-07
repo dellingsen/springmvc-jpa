@@ -1,0 +1,295 @@
+A {
+	color: #000000
+}
+A:link {
+	color: #000000;
+}
+A:visited {
+	color: #333333;
+}
+A:hover {
+	color: #E70810;
+}
+A:active {
+	color: #333333;
+}
+
+
+H1 {
+	font-size: 115%;
+	font-weight : bold;
+	margin-bottom : 2px;
+	margin-top : 0px;
+}
+
+H1.school {
+	color: #E70810;
+}
+
+H1.education {
+	color: #E76910;
+}
+
+H1.admin {
+	color: #008231;
+}
+
+H1.inside {
+	color: #00105A;
+}
+
+H2 {
+	font-size: 100%;
+	font-weight : bold;
+	margin-top: 0px;
+	margin-bottom : 0px;
+}
+
+H2.widgetHeader {
+	color: #FFFFFF;
+	margin-top: 3px;
+	margin-bottom :3px;
+}
+
+H3 {
+	font-size: 85%;
+	font-weight : bold;
+	margin-bottom : 3px;
+	margin-top : 3px;
+}
+
+H3.quickLinks {
+	margin-top : 23px;
+}
+
+
+
+P {
+	margin-bottom : 2px;
+	margin-top : 2px;
+}
+
+FORM {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+BODY {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-bottom: 0px;
+	padding-bottom: 0px;
+	text-align : left;
+}
+
+INPUT {
+	font-size: 85%;
+}
+
+SELECT {
+	font-size: 85%;
+}
+
+OPTION {
+	font-size: 85%;
+}
+
+INPUT.searchField {
+	width: 85px;
+}
+
+TABLE.parent {
+	text-align: left;
+}
+
+.stroke {background-color: #005826;}
+
+
+
+/* Secondary Navigation */
+.secondNav {
+	background-color: #FFD794;
+}
+
+.secondNav DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+.secondNav DIV A {
+	text-decoration: underline;
+	font-size: 100%;
+}
+
+.secondNav DIV A:hover {
+	text-decoration: underline;
+	color: #E70810;
+	font-size: 100%;
+}
+
+
+.cookieCrumb {
+	background-color: #FFFFFF;
+}
+
+.cookieCrumb DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	font-size: 80%;
+}
+
+/* Slot Styles */
+.searchSlot {
+	background-color: #000000;
+
+	}
+
+.searchSlot DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 1px;
+	padding-bottom : 1px;
+}
+
+.leftSlot {
+	background-color: #FFFFFF;
+
+}
+
+.leftSlot DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 3px;
+	padding-bottom : 3px;
+	font-size: 80%;
+}
+
+.featuredSlot {
+	background-color: #FFD794;
+}
+
+.featuredSlot DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 10px;
+	padding-bottom : 3px;
+	font-size: 80%;
+}
+
+.featuredSlot DIV.more {
+	padding-top : 3px;
+	text-align : right;
+}
+.featuredSlot DIV.more A {
+	text-decoration : underline;
+	font-weight : bold;
+	font-size : 100%;
+}
+
+
+
+.standardSlot {
+	background-color: #FFFFFF;
+}
+
+.standardSlot DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 15px;
+	padding-bottom : 5px;
+	font-size: 80%;
+}
+
+.standardSlot DIV.more {
+	padding-top : 5px;
+	text-align : right;
+}
+.standardSlot DIV.more A {
+	text-decoration : underline;
+	font-weight : bold;
+	font-size : 100%;
+}
+
+.standardSlot DIV.feature {
+	padding-top : 0px;
+	padding-right : 0px;
+	text-align : right;
+}
+
+.standardSlot DIV.feature DIV.more {
+	padding-top : 0px;
+	padding-right : 0px;
+	padding-bottom : 0px;
+	text-align : right;
+}
+
+.featureImage {
+	padding-left: 3px;
+}
+
+.callout {
+
+}
+
+.callout DIV {
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 3px;
+	padding-bottom : 3px;
+	font-size: 80%;
+}
+
+.callout DIV.header {
+	background-color: #E20A16;	
+	color: #FFFFFF;
+	width: 100%;
+}
+
+
+
+.footer {
+	padding-left : 5px;
+	padding-right : 5px;
+	padding-top : 5px;
+	padding-bottom : 5px;
+
+}
+
+.footer TD {
+	font-size: 50%;
+	font-family: Verdana,Arial;
+	color: #716F6E;
+}
+
+.footer TD A {
+	color: #716F6E;
+}
+
+tr.alt td {
+	background: #ecf6fc;
+}
+
+tr.over td {
+	background: #bcd4ec;
+}
+
+.team_invalid {
+    color:white;
+    background:red;
+}
+
+.team_valid {
+    color:green;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Location list</title>
+<link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+<div id="header"><span class="title">Locations</span></div>
+
+
+<div id="content">
+<h2>Welcome to the Spring MVC Location page</h2>
+<p>
+	Using backbone.js we can retrieve and map a list of locations from our Spring RESTful service to a web page.
+</p>
+</div>
+
+
+<div id="sidebar">
+	<div id="locations">
+		<p>The list of locations (locationTemplate) will be populated here.</p>
+	</div>
+	
+	<script id="locationTemplate" type="text/template">
+		<a href='#location/<%= id %>'><%=name%></a><br>
+	</script>
+</div>
+
+<div id="mainArea">
+	<p>The location details will go here when selected from list.</p>
+</div>
+
+<script type="text/template" id="location-details">
+    <div class="form-left-col">
+        <label>Id:</label>
+        <input type="text" id="id" name="id" value="<%= id %>" disabled />
+        <label>Name:</label>
+        <input type="text" id="name" name="name" value="<%= name %>" required/>
+        <label>Address:</label>
+        <input type="text" id="address" name="address" value="<%= address %>"/>
+        <label>Phone:</label>
+        <input type="text" id="phone" name="phone" value="<%= phone %>"/>
+        <label>Latitude:</label>
+        <input type="text" id="latitude" name="latitude"  value="<%= latitude %>"/>
+        <label>Longitude:</label>
+        <input type="text" id="longitude" name="longitude"  value="<%= longitude %>"/>
+    </div>
+    <div class="form-right-col">
+        <label>Notes:</label>
+        <textarea id="description" name="description"><%= description %></textarea>
+    </div>
+</script>
+
+<!-- JavaScript -->
+<script src="../js/lib/jquery-1.7.2.js"></script>
+<script src="../js/lib/underscore.js"></script>
+<script src="../js/lib/backbone.js"></script>
+<script src="../js/backbone-main.js"></script>   
+
+</body>
+</html>
